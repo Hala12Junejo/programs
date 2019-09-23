@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kilo Convert to Gram</title>
+<script>
+function Convert(){
+	var kilo=document.Kilo.textfield1.value;
+
+	var a=parseInt(kilo);
+	var gram=(kilo*1000);
+	document.Kilo.button.value=gram;
+}
+</script>
+</head>
+<body>
+<form name="Kilo">
+
+Enter Kilo<input type="text" name="textfield1"><br>
+Result Gram<input type="text" name="button" disabled><br>
+<input type="button" name="btnKilo" value="Ok" onclick="Convert();"><br>
+<input type="reset" name="btn" value="Clear">
+
+</form>
+</body>
+</html>

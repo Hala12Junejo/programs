@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function Convert(){
+	var month=document.Month.textfield.value;
+	var a=parseInt(month);
+	var day=(month*30);
+	document.Month.textfield2.value=day;
+}
+</script>
+</head>
+<body>
+<form name="Month">
+Enter Month<input type="text" name="textfield"><br>
+Result Days<input type="text" name="textfield2" disabled><br>
+<input type="button" name="btnMonth" value="Ok" onclick="Convert();">
+<input type="button" name="btn" value="Clear">
+</form>
+</body>
+</html>

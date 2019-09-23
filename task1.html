@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CalForm</title>
+<script>
+function add(){
+	var v1=document.CalForm.textfield1.value;
+	var v2=document.CalForm.textfield2.value;
+
+	var a=parseInt(v1);
+	var b=parseInt(v2);
+	var result=(a+b);
+	document.CalForm.button1.value=result;
+}
+function sub(){
+	var v1=document.CalForm.textfield1.value;
+	var v2=document.CalForm.textfield2.value;
+
+	var a=parseInt(v1);
+	var b=parseInt(v2);
+	var result=(a-b);
+	document.CalForm.button1.value=result;
+}
+function multi(){
+	var v1=document.CalForm.textfield1.value;
+	var v2=document.CalForm.textfield2.value;
+
+	var a=parseInt(v1);
+	var b=parseInt(v2);
+	var result=(a*b);
+	document.CalForm.button1.value=result;
+}
+
+function Division(){
+	var v1=document.CalForm.textfield1.value;
+	var v2=document.CalForm.textfield2.value;
+
+	var a=parseInt(v1);
+	var b=parseInt(v2);
+	var result=(a/b);
+	document.CalForm.button1.value=result;
+}
+function remin(){
+	var v1=document.CalForm.textfield1.value;
+	var v2=document.CalForm.textfield2.value;
+
+	var a=parseInt(v1);
+	var b=parseInt(v2);
+	var result=(a%b);
+	document.CalForm.button1.value=result;
+}
+</script>
+</head>
+<body>
+	<form name="CalForm">
+Enter the 1st Value:&nbsp;<input type="text" name="textfield1"><br>
+Enter the 2nd Value:<input type="text" name="textfield2"><br>
+Result:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="button1" disabled><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<input type="button" name="Btn" value="+"onclick="add();">
+<input type="button" name="Btn" value="-"onclick="sub();">
+<input type="button" name="Btn" value="*"onclick="multi();">
+<input type="button" name="Btn" value="/"onclick="Division();">
+<input type="button" name="Btn" value="%"onclick="remin();">            
+<input type="Reset" name="Reset" value="Reset">
+
+</form>
+</body>
+</html>

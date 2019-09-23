@@ -1,0 +1,26 @@
+<html>
+<head>
+<script>
+	
+	function Division(){
+	var inches=document.Convert.textfield1.value;
+	var a=parseInt(inches);
+	
+	var feet=(inches/12);
+	document.Convert.button.value=feet;
+}
+</script>
+</head>
+
+<body>
+	
+<form name="Convert">
+
+Enter Inches:<input type="text" name="textfield1"><br>
+Feet:<input type="text" name="button" disabled><br>
+<input  type="button" name="tn" value="Ok" onclick="Division();">
+<input type="Reset" name="btn" value="Clear">
+
+</form>
+</body>
+</html>
