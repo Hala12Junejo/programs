@@ -2,28 +2,23 @@
 <html>
 <head>
 <script>
-	
-	function Division(){
-	var inches=document.Division.textfield1.value;
-
-
-	var a=parseInt(inches);
-	
-	var feet=(inches/12);
-	document.Division.button.value=feet;
+function ReConvert(){
+	var hours=document.ReminCon.textfield.value;
+	var a=parseInt(hours);
+	var day=(hours/24);
+	var reminhours=(hours%24);
+	document.ReminCon.textfield2.value=day;
+    document.ReminCon.textfield3.value=reminhours;
 }
-
 </script>
 </head>
-
 <body>
-<form name="Division">
-
-Entert Inches<input type="text" name="textfield1"><br>
-Feet<input type="text" name="button" disabled></br>
-<input  type="button" name="tn" value="Ok" onclick="Division();">
+<form name="ReminCon">
+Enter Hours<input type="text" name="textfield"><br>
+Result Days<input type="text" name="textfield2" disabled><br>
+ReminHours<input type="text" name="textfield3" disabled><br>
+<input type="button" name="btn" value="Ok" onclick="ReConvert();">
 <input type="Reset" name="btn" value="Clear">
-
 </form>
 </body>
 </html>
